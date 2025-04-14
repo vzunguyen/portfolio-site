@@ -1,3 +1,15 @@
 ---
-$END$
+// SkillsSection.astro
+import SkillCard from './SkillCard.astro';
+
+const skillsData = [
+    { heading: 'Frontend', skills: ['HTML', 'CSS', 'React'] },
+    { heading: 'Backend', skills: ['Node.js', 'Express', 'MongoDB'] },
+];
 ---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {skillsData.map(({ heading, skills }) => (
+            <SkillCard heading={heading} skills={skills} />
+    ))}
+</div>

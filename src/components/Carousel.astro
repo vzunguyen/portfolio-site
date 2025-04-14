@@ -1,40 +1,55 @@
-<!-- -&#45;&#45;-->
-<!--import ProjectCard from "./ProjectCard.astro"-->
-<!-- -&#45;&#45;-->
-<!--<div id="indicators-carousel" class="relative w-full" data-carousel="static">-->
-<!--    &lt;!&ndash; Carousel wrapper &ndash;&gt;-->
-<!--    <div class="relative w-full overflow-hidden text-black">-->
-<!--        <div class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 py-6">-->
-<!--            &lt;!&ndash; Card 1 &ndash;&gt;-->
-<!--            <div class="min-w-[300px] max-w-2/3 rounded-xl bg-white shadow-lg p-6 flex-shrink-0">-->
-<!--                <ProjectCard name="Portfolio Site"-->
-<!--                             link="http://www.zuvn.dev"-->
-<!--                             skills="Javascript, React, Tailwind CSS, Vercel"-->
-<!--                             state="In Progress"-->
-<!--                             description="This website is made with React and Tailwind CSS, and uses JSON data to display my information. This website is deployed on Vercel.">-->
-<!--                </ProjectCard>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Card 2 &ndash;&gt;-->
-<!--            <div class="min-w-[300px] rounded-xl bg-white shadow-lg p-6 flex-shrink-0">-->
-<!--                <h1 class="text-xl font-bold">Card 2</h1>-->
-<!--                <p>This is the content of the second card.</p>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Card 3 &ndash;&gt;-->
-<!--            <div class="min-w-[300px] rounded-xl bg-white shadow-lg p-6 flex-shrink-0">-->
-<!--                <h1 class="text-xl font-bold">Card 3</h1>-->
-<!--                <p>This is the content of the third card.</p>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Card 4 &ndash;&gt;-->
-<!--            <div class="min-w-[300px] rounded-xl bg-white shadow-lg p-6 flex-shrink-0">-->
-<!--                <h1 class="text-xl font-bold">Card 4</h1>-->
-<!--                <p>This is the content of the fourth card.</p>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Card 5 &ndash;&gt;-->
-<!--            <div class="min-w-[300px] rounded-xl bg-white shadow-lg p-6 flex-shrink-0">-->
-<!--                <h1 class="text-xl font-bold">Card 5</h1>-->
-<!--                <p>This is the content of the fifth card.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
+---
+import ProjectCard from "./ProjectCard.astro"
+---
+<div id="indicators-carousel" class="relative w-full h-screen" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-full w-full overflow-y-auto text-black">
+        <div class="flex flex-col gap-4 snap-y snap-mandatory px-4 py-6 h-full w-full items-center scroll-smooth">
+            <!-- Card 1 -->
+            <div class="max-w-full md:w-2/3 rounded-xl bg-white opacity-90 shadow-lg p-6 snap-start">
+                <ProjectCard name="Portfolio Site"
+                             link="http://www.zuvn.dev"
+                             skills="Javascript, React, Tailwind CSS, Vercel"
+                             state="In Progress"
+                             description="This website is made with React and Tailwind CSS, and uses JSON data to display my information. This website is deployed on Vercel.">
+                </ProjectCard>
+            </div>
+            <!-- Card 2 -->
+            <div class="max-w-full md:w-2/3 rounded-xl bg-white opacity-90 shadow-lg p-6 snap-start">
+                <ProjectCard name="Portfolio Site"
+                             link="http://www.zuvn.dev"
+                             skills="Javascript, React, Tailwind CSS, Vercel"
+                             state="In Progress"
+                             description="This website is made with React and Tailwind CSS, and uses JSON data to display my information. This website is deployed on Vercel.">
+                </ProjectCard>
+            </div>
+            <!-- Card 3 -->
+            <div class="max-w-full md:w-2/3 rounded-xl bg-white opacity-90 shadow-lg p-6 snap-start">
+                <ProjectCard name="Portfolio Site"
+                             link="http://www.zuvn.dev"
+                             skills="Javascript, React, Tailwind CSS, Vercel"
+                             state="In Progress"
+                             description="This website is made with React and Tailwind CSS, and uses JSON data to display my information. This website is deployed on Vercel.">
+                </ProjectCard>
+            </div>
+            <!-- Card 4 -->
+            <div class="max-w-full md:w-2/3 rounded-xl bg-white opacity-90 shadow-lg p-6 snap-start">
+                <ProjectCard name="Portfolio Site"
+                             link="http://www.zuvn.dev"
+                             skills="Javascript, React, Tailwind CSS, Vercel"
+                             state="In Progress"
+                             description="This website is made with React and Tailwind CSS, and uses JSON data to display my information. This website is deployed on Vercel.">
+                </ProjectCard>
+            </div>
+            <!-- Card 5 -->
+            <div class="max-w-full md:w-2/3 rounded-xl bg-white opacity-90 shadow-lg p-6 snap-start">
+                <ProjectCard name="Portfolio Site"
+                             link="http://www.zuvn.dev"
+                             skills="Javascript, React, Tailwind CSS, Vercel"
+                             state="In Progress"
+                             description="This website is made with React and Tailwind CSS, and uses JSON data to display my information. This website is deployed on Vercel.">
+                </ProjectCard>
+            </div>
+        </div>
+    </div>
+</div>
