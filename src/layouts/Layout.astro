@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css'
 import Navigation from "../components/Navigation.astro";
-import Social from '../components/Social.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
 <!doctype html>
@@ -65,7 +65,9 @@ import Social from '../components/Social.astro';
 				</use>
 			</g>
 		</svg>
-		<slot />
+		<div class="animate-fadeIn">
+			<slot />
+		</div>
 	</body>
 </html>
 <style>
