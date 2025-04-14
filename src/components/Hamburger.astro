@@ -1,0 +1,52 @@
+---
+---
+<div id="toggleMenu" class="fixed top-15 left-6 z-50">
+    <div id="hamburger" class="relative rounded-full transition-all duration-300
+    before:content-[''] before:absolute before:w-8 before:h-1 before:bg-white
+    before:rounded-full before:-translate-y-2 before:transition-all before:duration-300
+    after:content-[''] after:absolute after:w-8 after:h-1 after:bg-white
+    after:rounded-full after:-translate-y-2 after:transition-all after:duration-300">
+    </div>
+</div>
+<div id="menuPanel" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-y-full transition-transform duration-500">
+    <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl text-black">
+        <a href="/">
+            <span class="relative text-black">
+              Home
+            </span>
+        </a>
+        <a href="/experience">
+            <span class="relative text-black">
+              Experience
+            </span>
+        </a>
+        <a href="/projects">
+            <span class="relative text-black">
+              Projects
+            </span>
+        </a>
+        <a href="/skills">
+            <span class="relative text-black">
+              Skills
+            </span>
+        </a>
+        <a href="/contact">
+            <span class="relative text-black">
+              Contacts
+            </span>
+        </a>
+    </div>
+</div>
+
+<script>
+    const toggleMenu = document.getElementById('toggleMenu');
+    const hamburger = document.getElementById('hamburger');
+    const menuPanel = document.getElementById('menuPanel');
+
+    toggleMenu?.addEventListener('click', () => {
+        hamburger?.classList.toggle('open');
+        menuPanel?.classList.toggle('-translate-y-full');
+        menuPanel?.classList.toggle('translate-y-0');
+    });
+
+</script>

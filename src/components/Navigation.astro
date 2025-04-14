@@ -1,4 +1,7 @@
-<nav>
+---
+import Hamburger from "./Hamburger.astro"
+---
+<nav class="invisible md:visible">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-evenly mx-auto p-10">
         <a href="/">
             <div class="flex justify-center">
@@ -37,3 +40,5 @@
         </a>
     </div>
 </nav>
+<div class="md:hidden"><Hamburger /></div>
+

@@ -4,3 +4,25 @@
 body {
     @apply bg-black text-white;
 }
+
+@layer components {
+    #hamburger.open::before {
+        background-color: black !important;
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #hamburger.open::after {
+        background-color: black !important;
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #hamburger::before {
+        top: -0.75rem;
+    }
+
+    #hamburger::after {
+        top: 0.76rem;
+    }
+}
