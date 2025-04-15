@@ -2,12 +2,12 @@
 const {heading, skills} = Astro.props;
 const skillList = Array.isArray(skills) ? skills : [];
 ---
-<div class="relative flex flex-col my-6  shadow-sm border border-slate-200 hover:border-slate-300 hover:shadow-md rounded-lg transition-all cursor-pointer w-96">
-    <div class="p-4">
-        <h1>{heading}</h1>
-        <ol>
+<div class="relative flex flex-col my-6 rounded-lg w-9/10 backdrop-blur-xl bg-white/60">
+    <div class="p-4 min-h-50 rounded-lg border-white/30 text-black divide-y">
+        <h1 class="font-medium text-xl md:text-2xl px-1 pb-1.5">{heading}</h1>
+        <ol class="list-inside p-2">
             {skillList.map((skill) => (
-                <li class="text-sm text-gray-400">{skill}</li>
+                    <li class="text-sm my-1">{skill}</li>
             ))}
         </ol>
     </div>

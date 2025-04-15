@@ -3,13 +3,18 @@
 import SkillCard from './SkillCard.astro';
 
 const skillsData = [
-    { heading: 'Frontend', skills: ['HTML', 'CSS', 'React'] },
-    { heading: 'Backend', skills: ['Node.js', 'Express', 'MongoDB'] },
+    { heading: 'Frontend Development', skills: ['HTML', 'CSS', 'React'] },
+    { heading: 'Backend Development', skills: ['.NET', 'SQL'] },
+    { heading: 'Game Development', skills: ['Unity', 'C#'] },
+    { heading: 'Tools', skills: ['Git', 'Docker', 'Postman', 'Confluence', 'Jira'] },
+    { heading: 'Languages', skills: ['English', 'Vietnamese'] },
+    { heading: 'Soft Skills', skills: ['Leadership', 'Teamwork', 'Communication', 'Problem-solving'] },
 ];
 ---
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {skillsData.map(({ heading, skills }) => (
-            <SkillCard heading={heading} skills={skills} />
-    ))}
+<div class="h-2/3 md:justify-center md:content-center">
+    <div class="gap-6 px-3 justify-items-center grid grid-cols-1 md:grid-cols-2">
+        {skillsData.map(({ heading, skills }) => (
+                <SkillCard heading={heading} skills={skills} />
+        ))}
+    </div>
 </div>

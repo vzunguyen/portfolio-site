@@ -2,7 +2,7 @@
 const { name, link, skills, state, description} = Astro.props;
  ---
 <a href={link}>
-    <h1 class="text-black text-3xl font-bold">{name}</h1>
+    <h1 class="text-black text-3xl font-bold hover:text-pink-500 transition ease-in-out">{name}</h1>
 </a>
     <p class="text-sm text-gray-400">{skills}</p>
     <p class="text-sm text-gray-400">{state}</p>
