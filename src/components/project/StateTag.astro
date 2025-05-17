@@ -1,0 +1,12 @@
+---
+const { stateText } = Astro.props;
+---
+{stateText.toLocaleLowerCase() === "completed" ? (
+<span class="bg-green-900 text-green-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">{stateText}</span>
+) : stateText.toLocaleLowerCase() === "in progress" ? (
+<span class="bg-blue-900 text-blue-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">{stateText}</span>
+) : stateText.toLocaleLowerCase() === "suspended" ? (
+<span class="bg-red-900 text-red-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">{stateText}</span>
+) : (
+<span class="bg-gray-700 text-gray-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">To be updated</span>
+)}

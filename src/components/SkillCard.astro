@@ -1,15 +1,16 @@
 ---
-const { heading, skills } = Astro.props;
+const { heading, skills, rates } = Astro.props;
 const skillList = Array.isArray(skills) ? skills : [];
+const skillRates = Array.isArray(rates) ? rates : [];
 ---
-<div class="group relative flex flex-col my-6 rounded-lg w-9/10 backdrop-blur-xl bg-white/90 hover:bg-pink-500 transition-all duration-300 ease-in-out hover:scale-103 shadow-lg">
-    <div class="p-4 min-h-50 rounded-lg border-white/30 divide-y text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-        <h1 class="font-medium text-xl md:text-2xl px-1 pb-1.5 transition-colors duration-300 ease-in-out group-hover:text-white">
+<div class="relative border border-[#5E5E64] flex flex-col my-6 rounded-lg w-9/10 backdrop-blur-sm transition-all duration-300 ease-in-out hover:scale-103">
+    <div class="p-4 min-h-50 rounded-lg transition-colors duration-300 ease-in-out">
+        <h1 class="font-medium text-lg px-1 pb-1.5 transition-colors duration-300 ease-in-out">
             {heading}
         </h1>
-        <ol class="list-inside p-2">
+        <ol class="grid list-inside p-2">
             {skillList.map((skill) => (
-                    <li class="text-sm my-1 transition-colors duration-300 ease-in-out group-hover:text-white">
+                    <li class="text-sm my-1 transition-colors duration-300 ease-in-out">
                         {skill}
                     </li>
             ))}

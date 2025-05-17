@@ -3,18 +3,18 @@
 import SkillCard from './SkillCard.astro';
 
 const skillsData = [
-    { heading: 'Frontend Development', skills: ['Javascript','TailwindCSS','Astro','React', 'HTML', 'CSS', 'PHP'] },
-    { heading: 'Backend Development', skills: ['C#','Java','Python','SpringBoot','.NET', 'SQL'] },
-    { heading: 'Game Development', skills: ['Unity'] },
-    { heading: 'Tools', skills: ['Git','Docker', 'Postman', 'Confluence', 'Jira'] },
-    { heading: 'Soft Skills', skills: ['Leadership', 'Teamwork', 'Communication', 'Problem-solving'] },
-    { heading: 'Languages', skills: ['English', 'Vietnamese'] },
+    { heading: 'Frontend Development', skills: ['Javascript','TailwindCSS','Astro','React', 'HTML', 'CSS', 'PHP'], rates: [3.5, 3.5, 2, 3, 3, 3.5, 2] },
+    { heading: 'Backend Development', skills: ['C#','Java','Python','SpringBoot','.NET', 'SQL'], rates: [3.5, 3, 2, 3, 2.5, 2.5] },
+    { heading: 'Game Development', skills: ['Unity'], rates: [1.5] },
+    { heading: 'Tools', skills: ['Git','Docker', 'Postman', 'Confluence', 'Jira'], rates:[3.5, 1.5, 1.5, 3.5, 3.5]},
+    { heading: 'Soft Skills', skills: ['Leadership', 'Teamwork', 'Communication', 'Problem-solving'], rates: [2.5, 4, 3, 3.5] },
+    { heading: 'Languages', skills: ['English', 'Vietnamese'], rates: [4.5, 5] },
 ];
 ---
 <div class="h-2/3 md:justify-center md:content-center">
-    <div class="gap-6 px-3 justify-items-center grid grid-cols-1 md:grid-cols-2">
-        {skillsData.map(({ heading, skills }) => (
-                <SkillCard heading={heading} skills={skills} />
+    <div class="gap-4 px-2 justify-items-center grid grid-cols-1 md:grid-cols-3">
+        {skillsData.map(({ heading, skills,rates }) => (
+                <SkillCard heading={heading} skills={skills} rates={rates} />
         ))}
     </div>
 </div>
