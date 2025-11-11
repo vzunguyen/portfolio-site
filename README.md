@@ -11,4 +11,12 @@ This is a static website that serves as my portfolio. It showcases my skills, pr
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for creating custom designs
 - [Vercel](https://vercel.com/) - To deploy
 
+## How I organised my project 📁
+| Folder/File       | Description                                          |
+| ----------------- |------------------------------------------------------|
+| `public/`        | Static assets and files that users can access to     |
+| `src/components/` | Reusable UI components (e.g., ProjectCard, Contacts) |
+| `src/pages/`      | Individual pages of the website                      |
+| `src/layouts/`    | Layout components for consistent page structure      |
+
 My Portfolio Site: [zuvn](https://zuvn.dev/)
