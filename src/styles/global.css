@@ -1,8 +1,18 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
-/* playfair-display-latin-wght-normal */
-/* roboto-mono-latin-wght-normal */
+* {
+    @apply text-[#FFFFFFcc];
+}
+
+#hamburger-item {
+    @apply text-black;
+}
+
+h1 {
+    @apply font-extrabold text-2xl md:text-3xl;
+}
+
 @font-face {
     font-family: 'Roboto Mono Variable';
     font-style: normal;
