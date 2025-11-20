@@ -1,17 +1,28 @@
 ---
 import ProjectCard from "./ProjectCard.astro"
+const blogs = await Astro.glob('../../pages/projectblogs/*.md')
 ---
 <div class="relative h-full w-full md:overflow-y-auto">
 <!-- ProjectCarousel wrapper -->
     <div class="text-black">
         <div class="flex flex-col gap-4 px-4 py-6 h-full w-full items-center">
+            <!--Dynamic Project Cards from MD Files:-->
+            {blogs.map((blog) => (
+                <ProjectCard emoji={blog.frontmatter.emoji}
+                             name={blog.frontmatter.title}
+                             link={blog.url}
+                             skills={blog.frontmatter.skills}
+                             state={blog.frontmatter.state}
+                             description={blog.frontmatter.description}>
+                </ProjectCard>
+            ))}
             <!-- Card 1 -->
             <ProjectCard emoji="💌"
                          name="Otome Tracker"
-                         link="#"
+                         link="/projectblogs/otometracker/"
                          skills="Typescript, Tailwind CSS, React, Kotlin, Docker, Postgres, Flyway"
                          state="In Progress"
-                         description="To be updated. /n - 1. A web application to track and manage otome games, built with React, Typescript, and Tailwind CSS. /n - 2. A mobile application to track and manage otome games, built with Kotlin. /n - 3. A backend service to handle data storage and retrieval, built with Docker, Postgres, and Flyway.">
+                         description="To be continued">
             </ProjectCard>
                 <ProjectCard emoji="🌐"
                              name="Portfolio Site"
