@@ -2,9 +2,18 @@
 import MainLayout from "./Layout.astro";
 import '../styles/global.css'
 const { frontmatter } = Astro.props;
+
 ---
 <MainLayout>
+    <!--Displaying blog for project-->
+    <h1 class="font-extrabold text-2xl md:text-3xl">{frontmatter.title}</h1>
     <div class="markdown-content">
         <slot/>
     </div>
 </MainLayout>
+
+<style>
+    * {
+        margin: 2rem;
+    }
+</style>

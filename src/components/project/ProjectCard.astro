@@ -1,6 +1,6 @@
  ---
  import StateTag from "./StateTag.astro";
- const {emoji, name, link, skills, state, description} = Astro.props;
+ const {emoji, name, link, github, skills, state, description} = Astro.props;
  ---
  <div class="border border-[#5E5E64] max-w-full backdrop-blur-sm md:w-2/3 rounded-xl p-6 snap-start transition-all duration-300 ease-in-out  hover:scale-103">
      <a href={link}>
@@ -8,13 +8,15 @@
              <span class="text-2xl">{emoji}</span> {name}
          </h1>
      </a>
-     <!-- TODO: Style skills so that they have a space and "," between each skill-->
      <p class="text-sm text-[#FFFFFFcc]">
-         {skills}
+         {skills.join(", ")}
      </p>
      <div class="py-2">
         <StateTag stateText={state}></StateTag>
      </div>
+     <a href={github} class="text-sm text-[#FFFFFFcc]">
+         Github Repository
+     </a>
      <p class="text-base text-[#FFFFFFcc]">
          {description}
      </p>

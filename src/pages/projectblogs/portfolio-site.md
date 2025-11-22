@@ -9,8 +9,8 @@ skills:
   - Storybook
   - MSW
 state: Completed
-description: A web application to track and manage otome games, routes, and user reviews.
-github: Not Public
+description: In order to put myself out there in the industry, I have created this portfolio website to showcase my skills and projects. 
+github: https://github.com/vzunguyen/portfolio-site
 ---
 # Introduction
 This is a static website that serves as my portfolio. It showcases my skills, projects, and

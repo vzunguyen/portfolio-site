@@ -8,9 +8,9 @@ skills:
   - Tailwind CSS
   - Storybook
   - MSW
-state: Completed
+state: In Progress
 description: A web application to track and manage otome games, routes, and user reviews.
-github: Not Public
+github: ../errors/blog-error
 ---
 # Introduction
 Otome Tracker is a web application designed to help users track and manage their otome games, routes, and user reviews. Built with React and TypeScript, it offers a seamless experience for otome enthusiasts to organize their gaming journey.

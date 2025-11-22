@@ -11,6 +11,7 @@ const blogs = await Astro.glob('../../pages/projectblogs/*.md')
                 <ProjectCard emoji={blog.frontmatter.emoji}
                              name={blog.frontmatter.title}
                              link={blog.url}
+                             github={blog.frontmatter.github}
                              skills={blog.frontmatter.skills}
                              state={blog.frontmatter.state}
                              description={blog.frontmatter.description}>

@@ -1,5 +1,6 @@
 ---
 ---
+<!--TODO: Disable scroll when menu is open -->
 <div id="toggleMenu" class="absolute top-15 left-6 z-50">
     <div id="hamburger" class="relative rounded-full transition-all duration-300
     before:content-[''] before:absolute before:w-8 before:h-1 before:bg-white
@@ -46,6 +47,7 @@
 
     toggleMenu?.addEventListener('click', () => {
         hamburger?.classList.toggle('open');
+        document.body.classList.toggle('overflow-hidden'); // prevents background scroll
         menuPanel?.classList.toggle('-translate-y-full');
         menuPanel?.classList.toggle('translate-y-0');
     });
