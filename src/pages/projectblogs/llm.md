@@ -7,7 +7,7 @@ skills:
     - PyTorch
     - LitGPT
 github: https://github.com/vzunguyen/llms-project
-state: Completed
+state: Suspended
 description: A project that explores the capabilities of Large Language Models (LLMs) using the Lit
 ---
 # Introduction
