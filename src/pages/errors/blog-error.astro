@@ -2,6 +2,11 @@
 import Layout from "../../layouts/Layout.astro";
 ---
 <Layout>
-    <h1>Error: Blog Not Found</h1>
-    <p>Sorry, the blog you are looking for does not exist.</p>
+    <!--TODO: Decide between error page or error banner-->
+    <div class="container m-auto mt-3 bg-red-800 rounded-lg w-5/6 sm:w-2/3 md:w-1/2 lg:w-2/3">
+        <div class="items-align-center text-center p-10 text-white">
+            <h1 class="font-bold text-2xl mb-5">GitHub Link Error</h1>
+            <p class="">Sorry, the GitHub you are looking for no longer exists or is currently private.</p>
+        </div>
+    </div>
 </Layout>
