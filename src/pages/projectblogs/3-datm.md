@@ -35,8 +35,20 @@ During this project, I gained interest with learning how to effectively use proj
 ![image](../../blogs-assets/datm-jira-auto.png)
 
 ### Confluence for Documentation
-
+We used Confluence for documenting our project requirements, design decisions, and meeting notes. Any final documentation such as game design document or coding guidelines for new developers were written in Google Docs due to the client preference.
 ![image](../../blogs-assets/datm-confluence.png)
 
-## Version Control
-Using Git and GitHub for version control was essential for collaboration within the team.
+## Agile Methodology
+We adopted Agile practices, conducting regular stand-up meetings, sprint planning, and retrospectives. This approach allowed us to adapt to changes quickly and continuously improve our development process.
+
+### Weekly Stand-ups
+We held weekly stand-up meetings with both our supervisor and the client to discuss progress, roadblocks, and plans for the week. This ensured everyone was aligned and any issues were addressed promptly.
+
+### Sprint Planning
+
+
+### Sprint Review
+At the end of each sprint, we held sprint review meetings to showcase the completed features to stakeholders and gather feedback. This feedback was invaluable in refining the game and ensuring it met user expectations.
+
+### Retrospective
+For retrospectives, we discussed what went well, what could be improved, and action items for the next sprint. This was mentioned in our Sprint Reports at the end of each sprint.
