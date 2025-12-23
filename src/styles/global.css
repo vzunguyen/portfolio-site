@@ -25,6 +25,14 @@ body {
     @apply font-medium text-lg;
 }
 
+.markdown-content img {
+    /*centre, max-w-2/3, h-auto;*/
+    @apply block mx-auto max-w-3/5 h-auto my-4 rounded-4xl;
+}
+
+.markdown-content li {
+    @apply list-disc list-inside;
+}
 @font-face {
     font-family: 'Roboto Mono Variable';
     font-style: normal;

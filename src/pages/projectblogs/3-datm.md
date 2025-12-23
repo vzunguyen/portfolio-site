@@ -27,14 +27,16 @@ The development of Day At The Market spanned over a year, during which I worked 
 - **C#**: The programming language used for scripting game mechanics and interactions within Unity.
 # My Journey (Problems we faced and what I learned)
 ## Planning and Documentation
-It was fundamental for us to plan out the tasks for each sprint (For this project, each sprint was 3 weeks long).
+It was fundamental for us to plan out the tasks for each sprint (for this project, each sprint was 3 weeks long).
 To fully utilised Jira and Confluence, we jumped in learning how to use these tools effectively for project management and documentation.
 
-### Jira and Sprint Planning
-
-[//]: # (TODO: Photos regarding the use of Jira)
+### Jira Automation
+During this project, I gained interest with learning how to effectively use project management tools. I was playing around with Jira Automation Function where whenever I was creating a ticket/task, it will perform pre-defined actions such as assigning the task to a specific person, setting due dates based on the sprint end date, and adding labels based on the task type.
+![image](../../blogs-assets/datm-jira-auto.png)
 
 ### Confluence for Documentation
+
+![image](../../blogs-assets/datm-confluence.png)
 
 ## Version Control
 Using Git and GitHub for version control was essential for collaboration within the team.
