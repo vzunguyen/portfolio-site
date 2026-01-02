@@ -10,7 +10,6 @@ description: A year long game project during internship period at Educational Ne
 github: ../errors/blog-error
 ---
 
-[//]: # (TODO: Figure out how to style images inside markdown files)
 ![image](../../blogs-assets/datm-panel.png)
 # Introduction
 Day At The Market is a 3D adventure game developed using Unity and C#. The game
