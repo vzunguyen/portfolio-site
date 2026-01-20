@@ -1,13 +1,14 @@
 ---
 import MainLayout from "./Layout.astro";
 import '../styles/global.css'
+import TableContents from "../components/TableContents.astro";
 const { frontmatter } = Astro.props;
 
 ---
 <MainLayout>
     <h1 class="text-4xl md:text-5xl">{frontmatter.title}</h1>
-    <!--TODO: Create table of contents component-->
     <div class="markdown-content">
+        <TableContents/>
         <slot/>
     </div>
 </MainLayout>
