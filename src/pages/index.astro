@@ -6,6 +6,7 @@ import ProjectCarousel from "../components/project/ProjectCarousel.astro";
 import SideNav from "../components/SideNav.astro";
 import Projects from "./projects.astro";
 import Contacts from "../components/Contacts.astro";
+import Skills from "./skills.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -14,10 +15,11 @@ const pageTitle = "Home Page";
 
 <Layout>
 	<SideNav />
-	<div class="ml-70">
+	<div class="md:ml-70">
 		<Welcome />
 		<Timeline />
 		<Projects/>
+		<Skills />
 		<Contacts />
 	</div>
 	<!--<ProjectCarousel />-->
