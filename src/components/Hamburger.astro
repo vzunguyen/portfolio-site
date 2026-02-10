@@ -1,6 +1,5 @@
 ---
 ---
-<!--TODO: Disable scroll when menu is open -->
 <div id="toggleMenu" class="absolute top-15 left-6 z-50">
     <div id="hamburger" class="relative rounded-full transition-all duration-300
     before:content-[''] before:absolute before:w-8 before:h-1 before:bg-white
@@ -12,27 +11,27 @@
 <!--TODO: Disable scroll when menu is open -->
 <div id="menuPanel" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-y-full transition-transform duration-500">
     <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
-        <a href="/">
+        <a href="#">
             <span id="hamburger-item" class="relative">
               Home
             </span>
         </a>
-        <a href="/experience">
+        <a href="#working-experience">
             <span id="hamburger-item" class="relative">
               Experience
             </span>
         </a>
-        <a href="/projects">
+        <a href="#projects">
             <span id="hamburger-item" class="relative">
               Projects
             </span>
         </a>
-        <a href="/skills">
+        <a href="#skills">
             <span id="hamburger-item" class="relative">
               Skills
             </span>
         </a>
-        <a href="/contact">
+        <a href="#contacts">
             <span id="hamburger-item" class="relative">
               Contacts
             </span>
@@ -46,8 +45,9 @@
     const menuPanel = document.getElementById('menuPanel');
 
     toggleMenu?.addEventListener('click', () => {
+        // Close after clicking section, not relocating to different url
         hamburger?.classList.toggle('open');
-        document.body.classList.toggle('overflow-hidden'); // prevents background scroll
+        document.body.classList.toggle('overflow-hidden');
         menuPanel?.classList.toggle('-translate-y-full');
         menuPanel?.classList.toggle('translate-y-0');
     });

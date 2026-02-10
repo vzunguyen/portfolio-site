@@ -1,8 +1,8 @@
 ---
 
----
+import Hamburger from "./Hamburger.astro";---
 <!--TODO: Hide sidebar if on mobile phone upright view-->
-<nav class="invisible md:visible fixed top-0 left-0 z-40 w-70 h-full content-center space-y-8 w-1/4  border-r backdrop-blur-3xl border-[#5E5E64] text-2xl">
+<nav class="invisible md:visible fixed top-0 left-0 z-40 w-70 h-screen content-center space-y-8 w-1/4  border-r backdrop-blur-3xl border-[#5E5E64] text-2xl">
     <ul class="space-y-10">
         <li class="flex justify-center">
         <a href="#introduction">
@@ -41,3 +41,5 @@
         </li>
     </ul>
 </nav>
+
+<div class="nav md:hidden"><Hamburger /></div>

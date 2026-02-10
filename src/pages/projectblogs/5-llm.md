@@ -8,7 +8,7 @@ skills:
     - LitGPT
 github: https://github.com/vzunguyen/llms-project
 state: Suspended
-description: A project that explores the capabilities of Large Language Models (LLMs) using the Lit
+description: A project that explores the capabilities of Large Language Models (LLMs) using the LitGPT framework.
 ---
 # Introduction
 This project explores the capabilities of Large Language Models (LLMs) using the LitGPT framework.
