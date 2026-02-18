@@ -2,19 +2,28 @@
 import MainLayout from "./Layout.astro";
 import '../styles/global.css'
 import TableContents from "../components/TableContents.astro";
+import SideNav from "../components/SideNav.astro";
 const { frontmatter } = Astro.props;
 
 ---
 <MainLayout>
-    <h1 class="text-4xl md:text-5xl">{frontmatter.title}</h1>
-    <div class="markdown-content">
-        <TableContents/>
-        <slot/>
-    </div>
+    <SideNav/>
+    <div class="md:ml-70">
+        <div class="p-10">
+            <h1 class="text-4xl md:text-5xl">{frontmatter.title}</h1>
+            <div class="markdown-content">
+                <TableContents/>
+                <slot/>
+            </div>
+        </div>
+    <!--TODO: Redesign back to home button-->
+        <div class="md:hidden w-screen md:w-full flex place-content-center mt-12 sm:px-6">
+                <a href="/">
+                    <button type="button" class="relative inline-flex items-center px-2 py-2 text-sm 5xl:text-xl font-medium text-gray-700 bg-white rounded-md sm:rounded-none hover:bg-gray-50">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="w-5 h-5" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>Back to Home</button>
+                </a>
+            </div>
+        </div>
 </MainLayout>
-
-<style>
-    * {
-        margin: 2rem;
-    }
-</style>
