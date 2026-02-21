@@ -8,8 +8,6 @@ const { frontmatter } = Astro.props;
 
 ---
 <MainLayout>
-    <SideNav/>
-    <div class="md:ml-70">
         <div class="p-10">
             <h1 class="text-4xl md:text-5xl">{frontmatter.title}</h1>
             <div class="markdown-content">
@@ -17,7 +15,5 @@ const { frontmatter } = Astro.props;
                 <slot/>
             </div>
         </div>
-    <!--TODO: Redesign back to home button-->
         <HomeButton/>
-    </div>
 </MainLayout>
